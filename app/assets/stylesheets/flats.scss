@@ -1,0 +1,57 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.flat {
+  width: 250px;
+  height: 250px;
+  background-color: rgba(240,240,240,0.5);
+  box-shadow: 2px 2px 2px gray;
+  position: relative;
+}
+
+.links {
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  width: 250px;
+}
+
+.remove {
+  color: red;
+}
+
+.edit {
+  color: orange;
+}
+
+.more_info {
+  color: blue;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button{
+  background-color: rgba(240,240,240,0.5);
+  height: 40px;
+  width: 80px;
+  margin-right: 40px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.map {
+  width: 1000px;
+}

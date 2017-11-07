@@ -1,0 +1,28 @@
+<div class="top">
+  <h2>Great flats in London</h2>
+  <div class="button">
+    <%= link_to("Add Flat", new_flat_path) %>
+  </div>
+</div>
+
+<div class="container">
+  <% @flats.each do |flat| %>
+  <div class="flat">
+    <h3><%= flat.name %></h3>
+    <p><%= flat.address %></p>
+    <div class="flat_info">
+      <ul class="list-inline">
+        <li><i class="fa fa-gbp" aria-hidden="true"></i> <%= flat.price_per_night %></li>
+        <li><i class="fa fa-users" aria-hidden="true"></i> <%= flat.number_of_guests %></li>
+      </ul>
+    </div>
+     <div class="links">
+      <ul class="list-inline">
+        <li class="more_info"> <%= link_to("More Info", flat_path(flat)) %> </li>
+        <li class="edit">Edit</li>
+        <li class="remove">Remove</li>
+      </ul>
+    </div>
+  </div>
+  <% end %>
+</div>
